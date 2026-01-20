@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: #111;
+    color: rgba(226, 218, 218, 0.719);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.header a {
+    color: rgba(219, 214, 214, 0.712);
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #00c9a7;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    background: #ebe1e1a8;
+}
+
+.hero-text h1 span {
+    color: #00c9a7;
+}
+
+.hero-text button {
+    padding: 12px 25px;
+    background: #00c9a7;
+    border: none;
+    color: rgba(219, 214, 214, 0.712);
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.hero-img img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* ===== A PROPOS ===== */
+.apropos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    background: #e2dcdcc0;
+}
+
+.apropos-img img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.apropos-text button {
+    padding: 12px 25px;
+    background: #00c9a7;
+    border: none;
+    color: rgba(212, 206, 206, 0.733);
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* ===== PROJETS ===== */
+.projets {
+    padding: 80px 50px;
+    text-align: center;
+    background: #e9dfdfb4;
+}
+
+.projets-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: rgba(231, 220, 220, 0.726);
+    padding: 25px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00c9a7;
+    border: none;
+    color: rgba(235, 225, 225, 0.884);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ===== COMPETENCES ===== */
+.competences {
+    padding: 80px 50px;
+    background: #ece7e7a2;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.skill-bar span {
+    font-weight: bold;
+}
+
+.bar {
+    background: #e9e3e3a8;
+    width: 200px;
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.fill {
+    background: #00c9a7;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    background: #111;
+    color: rgba(235, 226, 226, 0.897);
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 12px 25px;
+    background: #00c9a7;
+    border: none;
+    color: rgba(231, 222, 222, 0.89);
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #000;
+    color: rgba(243, 238, 238, 0.822);
+    text-align: center;
+    padding: 20px 0;
+}
+/* ===== RESPONSIVE MOBILE / TABLETTE ===== */
+@media (max-width: 768px) {
+    /* Empile les sections Hero et À propos verticalement */
+    .hero, .apropos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Empile les projets et compétences verticalement */
+    .projets-list, .skills {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Ajuste la taille et centre les images */
+    .hero-img img, .apropos-img img {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
