@@ -1,0 +1,7 @@
+# Ignorer fichiers systèmes
+.DS_Store
+Thumbs.db
+
+# Ignorer fichiers temporaires des éditeurs
+*.log
+*.tmp
